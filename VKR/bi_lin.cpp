@@ -7,6 +7,16 @@
 using namespace std;
 
 void bi_lin(const uint8_t* input, int width, int height, uint8_t* output, int new_width, int new_height)
+/*Функция масштабирования изображения билинейной интерполяцией.
+
+Параметры:
+  - input(const uint8_t*): Указатель на входное изображение в градациях серого.
+  - width(int): Ширина исходного изображения.
+  - height(int): Высота исходного изображения.
+  - output(uint8*): Буфер для результата масштабирования.
+  - new_width(int): Ширина выходного изображения.
+  - new_height(int): Высота выходного изображения.*/
+
 {
  Log::print("Начинается процесс интерполяции билинейным методом!");
  float scale_x = static_cast<float>(width) / new_width;
