@@ -17,9 +17,9 @@
 
 using namespace std;
 
-const string visible_path = "/home/sers/Desktops/Desktop1/Chubarov_astra/RGRTU/NIR_2/pictures/Visible_real_2560.jpg";
-const string ir_original_path = "/home/sers/Desktops/Desktop1/Chubarov_astra/RGRTU/NIR_2/pictures/IR_real_1280.jpg";
-const string ir_new_path = "/home/sers/Desktops/Desktop1/Chubarov_astra/RGRTU/NIR_2/pictures/IR_real_1280_new.jpg";
+const string visible_path = "/Users/dmitrij/Documents/C++/Scaling_images/pictures/Visible_real_2560.jpg";
+const string ir_original_path = "/Users/dmitrij/Documents/C++/Scaling_images/pictures/IR_real_1280.jpg";
+const string ir_new_path = "/Users/dmitrij/Documents/C++/Scaling_images/pictures/IR_real_1280_new.jpg";
 
 uint8_t* load_image(const string& path, int& w, int& h, int& c) {
     /*Функция, которая загружает изображение в градациях серого.

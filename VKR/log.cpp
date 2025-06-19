@@ -16,7 +16,7 @@ void Log::print(string data)
 {
     time_t now_c = chrono::system_clock::to_time_t(chrono::system_clock::now());
 
-    ofstream outFile("/home/sers/Desktops/Desktop1/Chubarov_astra/RGRTU/NIR_2/Log.txt", ios::app);
+    ofstream outFile("/Users/dmitrij/Documents/C++/Scaling_images/Log.txt", ios::app);
     if (outFile.is_open()){
         outFile << "[" << put_time(localtime(&now_c), "%F %T") << "]" << " " << data << endl;
         outFile.close();
